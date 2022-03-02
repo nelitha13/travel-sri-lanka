@@ -1,6 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 body {margin-top: 25px;}
 
-h1 {
+.discover {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, '', Times, serif;
 }
+
+button {
+    object-position: center;
+    border: none;
+    padding-top: 100px;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: Balsamiq Sans;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: Lobster;
+}
+
+.welcomesl {
+    text-align: justify;
+    font-size: 25px;
+}
+
+.welcomeagain {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wheretogo {
+    font-size: 1rem;
+    font-size: 50px;
+    font-family: Balsamiq Sans;
+}
+
