@@ -24,8 +24,9 @@ a{text-decoration:none;}
     color:#FFF;
     font-size: 35px;
     float: left;
-    padding:5px 0;
+    padding:5px 5;
     font-family: Lobster;
+    padding-top: 10px:
 }
 .top-nav{
     float:right;
