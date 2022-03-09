@@ -1,25 +1,526 @@
 <html>
-    <head>
-        <title>Where To Go - Travel Sri Lanka</title>
-        <link rel="icon" type="image/x-icon" href="Assets/Favicon.png">
-        <link rel="stylesheet" href= "CSS/Main.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="widthdevice-width, initial-scale=1,0">
-    </head>
+<head>
+    <title>Where To Go - Travel Sri Lanka</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Favicon.png">
+    <link rel="stylesheet" href="CSS/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widthdevice-width, initial-scale=1,0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <style>
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #more {
+            display: none;
+        }
+    </style>
+</head>
 
 
-
-    <body>
-
-        <script id="replace_with_navbar" src="/Navigation Bars/nav.js"></script>
-
-        <h1>Where To Go</h1>
-        
+<body onload="loading()">
 
 
-      <br> <br>
-      <script id="replace_with_navbar" src="/Navigation Bars/footer.js"></script>
-    </body>
+<div class="container-fluid">
+    <div class="header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="index.html">
+                    <b>Travel<Br>&ensp;<font style="color:aqua">Sri Lanka</font></b>
+                </a>
+            </div>
+            <div class="top-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="places.html">Where To Go</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="Events.html">Cultural Festivals</a></li>
+                    <li><a href="news.html">Tousrism News</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
 
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Adams Peak</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Assets/adams-peak.jpg" alt="Adams Peak" style="width:200px;height:150px">
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button type="button" onclick="view_modal(1)" class="btn btn-primary" id="viewmore">View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Bundala National Park</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Assets/Bundala-1.jpg" alt="Bundala National Park" style="width:200px;height:150px">
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button type="button" onclick="view_modal(2)" class="btn btn-primary" id="viewmore">View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Dambulla CaveTemple</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Assets/Dambulla%20temple.jpg" alt="Dambulla CaveTemple"
+                             style="width:200px;height:150px">
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button type="button" onclick="view_modal(3)" class="btn btn-primary" id="viewmore">View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Delft Temple</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Assets/Delft_Temple.jpg" alt="Adams Peak" style="width:200px;height:150px">
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button type="button" onclick="view_modal(4)" class="btn btn-primary" id="viewmore">View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Diyaluma Falls</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Assets/Diyaluma%20falls.jpg" alt="Adams Peak" style="width:200px;height:150px">
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button type="button" onclick="view_modal(5)" class="btn btn-primary" id="viewmore">View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Rawana Ella and Rawana Falls</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Assets/Rawana%20flls.jpg" alt="Rawana Ella and Rawana Falls"
+                             style="width:200px;height:150px">
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button type="button" onclick="view_modal(6)" class="btn btn-primary" id="viewmore">View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-3">
+
+            </div>
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Ridee Viharaya</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Assets/Ridee%20viharaya.jpg" alt="Adams Peak" style="width:200px;height:150px">
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button type="button" onclick="view_modal(7)" class="btn btn-primary" id="viewmore">View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+        <br>
+    </div>
+
+    </div>
+
+
+</body>
+
+<div class="modal" tabindex="-1" id="1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Adams Peek</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p>The mountain is located in the southern reaches of the Central Highlands, in the Ratnapura District
+                    and Nuwara Eliya district of the Sabaragamuwa Province and Central Province —lying about 40 km
+                    northeast of the city of Ratnapura and 32 km southwest of the city of Hatton. The surrounding region
+                    is largely forested hills, with no mountain of comparable size nearby. The region along the mountain
+                    is a wildlife reserve, housing many species and endemic species. Most local people believe dwarf
+                    elephants (kuru ali) live in this samanala forest. <br><br>
+                    Adam's Peak is important as a watershed. The districts to the south and the east of Adam's Peak
+                    yield precious stones—emeralds, rubies and sapphires, for which the island has been famous, and
+                    which earned for its ancient name of Ratnadvipa.<br><br>
+                    The peak pilgrimage season is in April, and the goal is to be on top of the mountain at sunrise,
+                    when the distinctive shape of the mountain casts a triangular shadow on the surrounding plain and
+                    can be seen to move quickly downward as the sun rises.<br><br>
+                    Climbing at night can be a remarkable experience, with the lights of the path leading up and into
+                    the stars overhead. There are rest stops along the way.<br><br>
+                    The mountain is most often scaled from December to May. During other months it is hard to climb the
+                    mountain due to very heavy rain, extreme wind, and thick mist.<br><br>
+                    For Buddhists, the footprint mark is the left foot of the Buddha, left behind when Buddha visited
+                    Sri Lanka, as a symbol for worship at the invitation of Buddhist God Saman.<br><br>
+                    Access to the mountain is possible by 6 trails: Ratnapura-Palabaddala, Hatton-Nallathanni,
+                    Kuruwita-Erathna, Murraywatte, Mookuwatte & Malimboda. The Nallathanni & Palabaddala routes are most
+                    favored by those undertaking the climb, while the Kuruwita-Erathna trail is used less often; these
+                    trails are linked to major cities or town by bus, accounting for their popular use.<br><br>
+                    The Murraywatte, Mookuwatte & Malimboda routes are hardly used, but do intersect with the
+                    Palabaddala road midway through the ascent.<br><br>
+                    The usual route taken by most pilgrims is ascent via Hatton and descent via Ratnapura; although the
+                    Hatton trail is the steepest, it is also shorter than any of the other trails by approximately five
+                    kilometers.<br><br>
+                    Sri pada season begin in December and it is end in May. The January to March period is particularly
+                    busy time to climb.<br><br>
+                    Most people starting this journey Dalhousie call nallathanni. nallathanni is 3 hours from
+                    hatton.<br><br>
+                <li>Buses- In peak season might be two direct buses from kandy. Otherwise exists local bus from
+                    Hatton. You might be required to change bus in Maskeliya (after around 1.5 hours).
+                </li>
+                <li>Train- The nearest train station is Hatton. Then switch to bus, taxi, tuktuk.</li>
+                <li>Taxi- Depending on your negotiation skills, a taxi (7 seats) around LKR2000-3000.</li>
+                <li>TukTuk- Depending on your negotiation skills. Around LKR600.
+                    </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="2">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bundala National Park</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p>T Bundala harbors 197 species of birds, the highlight being the greater flamingo, which migrate in
+                    large flocks. Bundala was designated a wildlife sanctuary in 1969 and redefined to a national park
+                    on 4 January 1993. In 1991 Bundala became the first wetland to be declared as a Ramsar site in Sri
+                    Lanka. In 2005 the national park was designated as a biosphere reserve by UNESCO, the fourth
+                    biosphere reserve in Sri Lanka. The national park is situated 245 kilometers (152 mi) southeast of
+                    Colombo.
+                    Best time to visit is September to March: during this period, migratory birds arrive at the park.
+                    The ecological areas of the national park contain seven terrestrial habitat types and six wetland
+                    types. A total of 383 plant species belonging to 90 families have been recorded from the park. In
+                    the small degraded patch of mangrove found at the Bundala lagoon area, black mangrove trees are
+                    widespread. The strip of Palu (Manilkara hexandra) tree forest on the sand-dunes east of Bundala
+                    village is a unique type of forest in Sri Lanka. The Bundala National Park has been identified as an
+                    outstanding Important Bird Area in the South Indian and Sri Lankan wetlands. 324 species of
+                    vertebrates have been recorded in the national park, which include 32 species of fish, 15 species of
+                    amphibians, 48 species of reptiles, 197 species of birds and 32 species of mammals. 52 species of
+                    butterflies are among the invertebrates. The wetland habitats in Bundala harbors about 100 species
+                    of water birds, half of them being migrant birds. Of 197 avifaunal species 58 are migratory species.
+                    A few Asian elephants still inhabit the forests of Bundala. Other mammals seen in the park are toque
+                    macaque, common langur, jackal, leopard, fishing cat, rusty-spotted cat, mongoose, wild boar, mouse
+                    deer, Indian muntjac, spotted deer, sambar, black-napped hare, Indian pangolin, and porcupine.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="3">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Dambulla CaveTemple</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                Located in central Sri Lanka, the Rangiri Dambulla Cave Temple is a living Buddhist site that is focused on a series of five cave shrines. Inhabited by forest-dwelling Buddhist monks since the 3rd century BCE, these natural caves have been transformed continuously throughout the historical period into one of the largest and most outstanding Buddhist complexes in the Southern and South Eastern Asian region, showcasing innovative approaches to interior layout and decoration. In keeping with a longstanding tradition associated with living Buddhist ritual practices and continuous royal patronage, the cave shrines underwent several renovation and refurbishing programmes before assuming their present interior forms in the 18th century. The vast internal spaces of the cave shrines are not compartmentalized, but are spatially differentiated by a deliberate and subtle arrangement of polychrome sculpture of exceptional craftsmanship and decorated with brilliant compositions of mural paintings. This spatial hierarchy and purposive interior layout devoid of physical divisions lead the devotees systematically through the spaces from one ritual function to the next. The site is remarkable in the Buddhist world for its association with the continuous tradition of living Buddhist ritual practices and pilgrimage for more than two millennia.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="4">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Delft Temple</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p> In a corner of the island, the base of a stupa is found along with the remnants of four subordinate
+                    stupas surrounding it. Legend has it that this was the location where ArhatSangamittaTheri rested
+                    during her voyage to the island carrying the sacred sapling of the Bo tree. <br><br>
+                    The stupa is said to have been built by the Buddhists who resided in the island at that time.
+                    Situated closed to the sea the location also provides a panoramic view to the distant sea and
+                    beyond.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="5">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Diyaluma Falls</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p> On one side of cascades, the earth is covered with deciduous plants. Wild animals found in the area
+                    include lizards.
+                    In Sinhalese, Diyaluma or Diya Haluma means "rapid flow of water" or may be translated as "liquid
+                    light". According to Sri Lankan historian, Dr. R. L. Brohier, Diyaluma is the setting of the
+                    folklore about a tragedy involving a young chieftain who had been banished to the highlands and the
+                    attempt by his betrothed to join. 
+                    As all the passes were guarded the young man let down a rope of twisted creepers over the
+                    escarpment, as she was hauled up she was dashed against the rocks and died. The Gods, moved to pity
+                    by the harrowing spectacle, caused a stream of water to gush from the mountain and veil all evidence
+                    of the tragedy in a watery light, hence the term Diyaluma.
+                    At 171 m, Diyaluma Ella Falls is the third largest waterfall in Sri Lanka. The torrent of water
+                    cascades to the plateau of Koslanda and during the rain, it is a spectacular view.
+                    Cascades is located along the Koslanda-Wellawaya road in the district of Badulla. Koslanda is the
+                    closest town in the fall, 6 km, and Wellawaya is 13 km.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="6">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Rawana Ella and Rawana Falls</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p> Ravana Ella and Ravana water fall both are located in the same place but, Ravana falls can’t be seen
+                    from the Main road because Ravana Falls is situated above the Ravana Ella. There has cave called
+                    Ravana ella cave and it is Located near to this Ravana Falls. 
+                    This Name “Ravana Ella” received from, after the great king Ravana. According to the legend after
+                    the kidnapping sitha, ravana king brought her to this place and hid her at the cave behind the
+                    waterfall. Ravana Ella also known as “Bambaragama Ella” 
+                    This Ravana Ella waterfall 40m in height and it flows to “Ho Oya”. 
+                    This Ravana Ella and Ravana Falls surround with greenish environment. This gorgeous waterfall flows
+                    face to the main road, ella – wellawaya.
+                    Ravana Ella located 11km away from Bandarawela. It is about 215 km from Colombo, balangoda and
+                    bandarawela route. Best time to visit this falls last few days of rainy season or just after.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="7">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ridee Viharaya</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p>Ridi Vihara or the Silver Temple was built at the place where Silver ore was found, that was made
+                    used to build Ruwanweli Dageba at Anuradhapura by King Dutugemunu during his rein.Ridi Vihara is an
+                    important Raja Maha Vihara belonging to the Cultural Triangle. Historical Data on this Monastery
+                    complex is found in some Caves written in Brahmin Inscriptions. 
+                    They dates back to the 2nd and 3rd Centuries BC. During the time of Arahath Mahinda, many Arahaths
+                    are believed to be resided in these caves which numbers around twenty five in the surrounding area
+                    of Ridi Vihara and Rambadagalla area. The caves had been prepared by cutting into the rock and
+                    donated by chieftains of the area to the Sangha. The Ridi Vihara temple was built later by King
+                    Dutugemunu and the details about the construction is mainly being known by the historical chronicle
+                    Mahavamsa and by other sources like Ridi Vihara Asna and also by legend
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="site-footer" style="background-color: #4f5050">
+    <br>
+    <div class="row">
+        <div class="col-4" style="text-align: center">
+            <h3 style="font-family: Lobster">Visit Sri Lanak</h3>
+        </div>
+        <div class="col-4" style="text-align: center">
+            <!--                <h3 style="font-family: Lobster">Visit Sri Lanak</h3>-->
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4" style="text-align: center">
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="places.html">Where To Go</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4" style="text-align: center">
+                    <ul class="footer-links">
+                        <li><a href="Events.html">Cultural Festivals</a></li>
+                        <li><a href="news.html">Tousrism News</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+                <a href="#">Travel Sri Lanka</a>.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+<script>
+    var adamspeek = new bootstrap.Modal(document.getElementById('1'), 'focus');
+    var bundala = new bootstrap.Modal(document.getElementById('2'), 'focus');
+    var dambulla = new bootstrap.Modal(document.getElementById('3'), 'focus');
+    var delft = new bootstrap.Modal(document.getElementById('4'), 'focus');
+    var diyaluma = new bootstrap.Modal(document.getElementById('5'), 'focus');
+    var rawana = new bootstrap.Modal(document.getElementById('6'), 'focus');
+    var ridee = new bootstrap.Modal(document.getElementById('7'), 'focus');
+
+    function loading() {
+        adamspeek.hide();
+        bundala.hide();
+        dambulla.hide();
+        delft.hide();
+        diyaluma.hide();
+        rawana.hide();
+        ridee.hide();
+    }
+
+    function view_modal(id) {
+        if (id == 1) {
+            adamspeek.show();
+        }
+        if (id == 2) {
+            bundala.show();
+        }
+        if (id == 3) {
+            dambulla.show();
+        }
+        if (id == 4) {
+            delft.show();
+        }
+        if (id == 5) {
+            diyaluma.show();
+        }
+        if (id == 6) {
+            rawana.show();
+        }
+        if (id == 7) {
+            ridee.show();
+        }
+
+    }
+</script>
 </html>
