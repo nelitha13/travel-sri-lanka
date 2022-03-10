@@ -1,9 +1,9 @@
 # Discover-a-different-island
 
 # How to install and run the project
-index.html
+run index.html
 
-Technologies
+Used Technologies
 * HTML
 * CSS
 * Bootstrap css framework
