@@ -38,7 +38,7 @@ a {
 }
 
 
-/*----start-header-----*/
+
 
 .header {
     background: #323A45;
@@ -47,7 +47,7 @@ a {
 
 .logo b {
     color: #FFF;
-    font-size: 33px;
+    font-size: 30px;
     float: left;
     padding: 5px 5;
     font-family: Lobster;
@@ -365,12 +365,14 @@ h2 {
     border-style: solid;
     border-color: #00B895;
     border-radius: 12px;
-    height: 15%;
+    height: 18%;
     width: 100%;
     margin: 5px;
     padding: 2px;
     text-align: center;
     font-family: "Adobe Devanagari";
+    margin-bottom: 20px;
+
 }
 #newsdetails{
     border-style: solid;
@@ -387,6 +389,88 @@ h2 {
 #about{
     border-style: solid;
     border-color: #00B895;
-    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+}
+#footerlink{
+    color: white
+}
+
+#header-img{
+    text-align: left;
+}
+
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    width: 2%;
+    height: auto;
+}
+
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.counter
+{
+    background-color: #eaecf0;
     text-align: center;
 }
+.tourists,.places,.events
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.counter-count
+{
+    font-size: 18px;
+    background-color: #00B895;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.tourists-p,.places-p,.events-p
+{
+    font-size: 24px;
+    color: #000000;
+    line-height: 34px;
+}
+
+#footericon{
+    width: 50px;
+    height: auto;
+}
+
