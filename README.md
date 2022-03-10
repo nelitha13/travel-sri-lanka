@@ -1,7 +1,7 @@
 # Discover-a-different-island
 
-# How to install and run the project
-run index.html
+# To vist the website
+https://nelitha14.github.io/Discover-a-different-island/index.html
 
 Used Technologies
 * HTML
