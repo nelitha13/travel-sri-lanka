@@ -5,13 +5,17 @@
     padding-right: 0px;
     padding-left: 0px;
 }
-html, body {
+
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 ol,
 ul {
     list-style: none;
@@ -133,10 +137,12 @@ a {
         right: 20px;
         padding: 20px;
     }
+
     .slider .slide .caption h2 {
         margin: 0 0 10;
         font-size: 30px;
     }
+
     .slider .slide .caption p {
         font-size: 16px;
     }
@@ -146,27 +152,35 @@ a {
     0% {
         left: 0;
     }
+
     20% {
         left: 0;
     }
+
     25% {
         left: -100%;
     }
+
     45% {
         left: -100%;
     }
+
     50% {
         left: -200%;
     }
+
     70% {
         left: -200%;
     }
+
     75% {
         left: -300%;
     }
+
     95% {
         left: -300%;
     }
+
     100% {
         left: -400%;
     }
@@ -273,21 +287,25 @@ h2 {
     text-align: center;
 }
 
-.content_top{
-    background:#45B39E;
-    padding:50px 0;
+.content_top {
+    background: #45B39E;
+    padding: 50px 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    position:relative;
+    position: relative;
 }
-#cd{
+
+#cd {
     width: 200px;
     height: auto;
     margin: 0 auto;
     padding: 10px;
     position: relative;
 }
-.flaticon-multimedia:before { content: "\f134"; }
+
+.flaticon-multimedia:before {
+    content: "\f134";
+}
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -317,7 +335,8 @@ h2 {
 }
 
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -351,17 +370,18 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #center {
     margin: auto;
     padding: 10px;
 }
 
-#viewmore{
+#viewmore {
     background-color: #00B895;
 
 }
 
-#news{
+#news {
     border-style: solid;
     border-color: #00B895;
     border-radius: 12px;
@@ -374,7 +394,8 @@ h2 {
     margin-bottom: 20px;
 
 }
-#newsdetails{
+
+#newsdetails {
     border-style: solid;
     border-color: #00B895;
     border-radius: 12px;
@@ -386,17 +407,18 @@ h2 {
     font-family: "Adobe Devanagari";
 }
 
-#about{
+#about {
     border-style: solid;
     border-color: #00B895;
     text-align: center;
     padding: 10px;
 }
-#footerlink{
+
+#footerlink {
     color: white
 }
 
-#header-img{
+#header-img {
     text-align: left;
 }
 
@@ -434,18 +456,19 @@ h2 {
 }
 
 
-.counter
-{
+.counter {
     background-color: #eaecf0;
     text-align: center;
 }
-.tourists,.places,.events
-{
+
+.tourists,
+.places,
+.events {
     margin-top: 70px;
     margin-bottom: 70px;
 }
-.counter-count
-{
+
+.counter-count {
     font-size: 18px;
     background-color: #00B895;
     border-radius: 50%;
@@ -462,15 +485,15 @@ h2 {
     display: inline-block;
 }
 
-.tourists-p,.places-p,.events-p
-{
+.tourists-p,
+.places-p,
+.events-p {
     font-size: 24px;
     color: #000000;
     line-height: 34px;
 }
 
-#footericon{
+#footericon {
     width: 50px;
     height: auto;
 }
-
